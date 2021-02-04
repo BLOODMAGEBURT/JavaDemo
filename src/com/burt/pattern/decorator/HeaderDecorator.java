@@ -11,7 +11,7 @@ public class HeaderDecorator extends PrintDecorator {
     public void print() {
         Printer.printHeader(text);
 
-        // 嵌套执行
+        // 嵌套执行 todo
         printComponent.print();
     }
 }
