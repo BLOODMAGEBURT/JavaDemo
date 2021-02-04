@@ -2,14 +2,16 @@ package com.burt.pattern.decorator;
 
 public class HeaderDecorator extends PrintDecorator {
 
-    public HeaderDecorator(String text, PrintComponent printComponent) {
-        this.text = text;
-        this.printComponent = printComponent;
+    private String header;
+
+    public HeaderDecorator(PrintComponent printComponent, String header) {
+        super(printComponent);
+        this.header = header;
     }
 
     @Override
     public void print() {
-        Printer.printHeader(text);
+        Printer.printHeader(header);
 
         // 嵌套执行 todo
         printComponent.print();
