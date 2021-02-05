@@ -11,8 +11,9 @@ public class FooterDecorator extends PrintDecorator {
 
     @Override
     public void print() {
+        printComponent.print();
+
         Printer.printFooter(footer);
 
-        printComponent.print();
     }
 }

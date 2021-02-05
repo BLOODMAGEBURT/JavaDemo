@@ -11,9 +11,9 @@ public class HeaderDecorator extends PrintDecorator {
 
     @Override
     public void print() {
-        Printer.printHeader(header);
-
-        // 嵌套执行 todo
+        // 嵌套执行
         printComponent.print();
+
+        Printer.printHeader(header);
     }
 }

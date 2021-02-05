@@ -1,7 +1,7 @@
 package com.burt.pattern.decorator;
 
 public class OriginComponent extends PrintComponent {
-    private String text;
+    private final String text;
 
     public OriginComponent(String text) {
 
