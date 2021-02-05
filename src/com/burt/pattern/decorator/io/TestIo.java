@@ -6,7 +6,7 @@ public class TestIo {
 
 
     public static void main(String[] args) {
-        readFromFile(null);
+        readFromFile("/Users/xujianbo/IdeaProjects/JavaDemo/src/com/burt/pattern/decorator/io/a.txt");
     }
 
     private static void readFromFile(String filePath) {
@@ -19,7 +19,7 @@ public class TestIo {
             byte[] buffer = new byte[1024];
 
             bufferedInputStream = new BufferedInputStream(is); // 默认缓冲大小8192
-
+            bufferedInputStream.read(buffer);
             int len = 0;
             while ((len = bufferedInputStream.read(buffer)) != -1) {
                 //将读取的字节转为字符串对象
@@ -35,6 +35,8 @@ public class TestIo {
 
 
     }
+
+
 
 
 }

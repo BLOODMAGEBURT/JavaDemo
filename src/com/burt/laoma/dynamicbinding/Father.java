@@ -30,4 +30,13 @@ public class Father {
                 "father run"
         );
     }
+
+    public void walk() {
+        walk(10);
+    }
+
+    public void walk(int i) {
+        System.out.println("father walk 10m");
+    }
+
 }

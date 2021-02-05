@@ -20,13 +20,8 @@ public class Child extends Father {
         System.out.println("child run too");
     }
 
-    public static void main(String[] args) {
-//        Father father = new Father();
-
-        Father child = new Child();
-
-
+    @Override
+    public void walk(int i) {
+        System.out.println("child walk i:" + i);
     }
-
-
 }
