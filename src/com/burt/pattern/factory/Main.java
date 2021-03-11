@@ -23,7 +23,7 @@ public class Main {
 
 
         // 工厂方法
-
+        ComputerFactory.getFactory().produce(ComputerType.SERVER).compute();
 
     }
 
