@@ -11,6 +11,20 @@ package com.burt.pattern.factory;
 public class Main {
     public static void main(String[] args) {
 
+        // 抽象工厂
+        AbstractFactory factory = new ModernFactory();
+
+//        AbstractFactory factory = new MageFactory();
+
+
+        factory.createCloth().wear();
+        factory.createVehicle().go();
+        factory.createWeapon().attack();
+
+
+        // 工厂方法
+
+
     }
 
 }
